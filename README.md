@@ -22,6 +22,10 @@ To use each of these assets, add the full asset package to the *third_party* fol
 
 A full build of the project with the third-party components is included in the *bin* folder.
 
+## Linux
+
+Build the SoundStageNative Asset in Assets/SoundStageNative/SoundStageNative/ with cmake. The library will be placed in x86/Release subdirectory automatically.
+
 ### Credits
 ###### CREATED BY
 Logan Olson

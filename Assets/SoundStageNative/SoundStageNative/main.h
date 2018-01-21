@@ -14,7 +14,11 @@
  * limitations under the License.
  */
 
+#ifdef _WIN32
 #define SOUNDSTAGE_API __declspec(dllexport) 
+#else
+#define SOUNDSTAGE_API
+#endif
 
 extern "C" {
 	SOUNDSTAGE_API void SetArrayToFixedValue(float buf[], int length, float value);

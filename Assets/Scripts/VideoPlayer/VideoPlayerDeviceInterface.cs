@@ -92,7 +92,7 @@ public class VideoPlayerDeviceInterface : componentInterface {
   IEnumerator movieRoutine() {
     loading = true;
     WWW www = new WWW("file:///" + Application.streamingAssetsPath + System.IO.Path.DirectorySeparatorChar + vidFilename);
-    movieTexture = www.movie;
+    movieTexture = www.GetMovieTexture();
     while (!movieTexture.isReadyToPlay) {
       yield return null;
     }
