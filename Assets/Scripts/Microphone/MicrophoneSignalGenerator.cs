@@ -62,7 +62,7 @@ public class MicrophoneSignalGenerator : signalGenerator {
     source.Stop();
     Microphone.End(Microphone.devices[curMicID]);
     curMicID = num;
-    micClip = new AudioClip();
+    //micClip = new AudioClip();
 
     micClip = Microphone.Start(Microphone.devices[num], true, 1, 44100);
 
